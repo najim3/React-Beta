@@ -10,10 +10,8 @@ function LikeButton() {
     "Like"
   );
 }
-const rootNode = document.getElementById("root");
-const root = ReactDOM.createRoot(rootNode);
-root.render(React.createElement(LikeButton));
 
-const rootNode2 = document.getElementById("root2");
-const root2 = ReactDOM.createRoot(rootNode2);
-root2.render(React.createElement(LikeButton));
+document.querySelectorAll(".root").forEach((rootNode) => {
+  const root = ReactDOM.createRoot(rootNode);
+  root.render(React.createElement(LikeButton));
+});
