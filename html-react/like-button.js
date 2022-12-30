@@ -4,11 +4,7 @@ function LikeButton() {
   if (liked) {
     return "You liked this";
   }
-  return React.createElement(
-    "Button",
-    { onClick: () => setLiked(true) },
-    "Like"
-  );
+  return <button onClick={() => setLiked(true)}>Like</button>;
 }
 
 document.querySelectorAll(".root").forEach((rootNode) => {
